@@ -1,8 +1,5 @@
 <template>
     <div class="row">
-        <div class="col-12 mb-2">
-            <router-link :to="{ name: 'crearSchedule', params: { id: movieId } }" class="btn btn-success"><i class="fas fa-plus-circle"></i> Crear</router-link>
-        </div>
         <div class="col-12">
             <div class="table-responsive">
                 <table class="table table-bordered">
@@ -20,7 +17,7 @@
                             <td>{{ movie_schedule.name }}</td>
                             <td>{{ schedule.time }}</td>
                             <td>{{ schedule ? 'Activo' : 'Inactivo' }}</td>
-                            <td><button @click="borrarSchedule(schedule.id)" class="btn btn-danger">Eliminar</button></td>
+
                         </tr>
                     </tbody>
                 </table>
